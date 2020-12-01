@@ -1,4 +1,4 @@
-package day1
+package puzzles
 
 import (
 	"aoc/util"
