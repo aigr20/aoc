@@ -11,27 +11,15 @@ func treesOnPath(rows []string, xStep int, yStep int) int {
 	repeatAfter := len(rows[0])
 	trees := 0
 	checkPos := 0
-	if yStep == 1 {
-		for _, row := range rows {
-			if string(row[checkPos]) == "#" {
-				trees++
-			}
-			if (checkPos + xStep) > repeatAfter-1 {
-				checkPos = (checkPos + xStep) % repeatAfter
-			} else {
-				checkPos += xStep
-			}
+
+	for i := 0; i < len(rows); i += yStep {
+		if string(rows[i][checkPos]) == "#" {
+			trees++
 		}
-	} else {
-		for i := 0; i < len(rows); i += yStep {
-			if string(rows[i][checkPos]) == "#" {
-				trees++
-			}
-			if (checkPos + xStep) > repeatAfter-1 {
-				checkPos = (checkPos + xStep) % repeatAfter
-			} else {
-				checkPos += xStep
-			}
+		if (checkPos + xStep) > repeatAfter-1 {
+			checkPos = (checkPos + xStep) % repeatAfter
+		} else {
+			checkPos += xStep
 		}
 	}
 
