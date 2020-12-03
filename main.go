@@ -10,4 +10,6 @@ func main() {
 	puzzles.Day1()
 	fmt.Println("Dag 2:")
 	puzzles.Day2()
+	fmt.Println("Dag 3:")
+	puzzles.Day3()
 }
