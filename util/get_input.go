@@ -1,6 +1,9 @@
 package util
 
-import "io/ioutil"
+import (
+	"io/ioutil"
+	"strings"
+)
 
 // ReadInput takes the path to an input file and returns the content
 func ReadInput(filepath string) (input string, err error) {
@@ -8,7 +11,7 @@ func ReadInput(filepath string) (input string, err error) {
 	if err != nil {
 		return "", err
 	}
-	input = string(file)
+	input = strings.TrimSuffix(string(file), "\n")
 
 	return
 }
