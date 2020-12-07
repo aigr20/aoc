@@ -67,6 +67,6 @@ func Day6() {
 		unanimousYes += countUnanimousYes(groupAnswers)
 	}
 
-	fmt.Printf("Totalt var det %v ja-svar\n", totalYes)
-	fmt.Printf("Total var det %v eniga ja-svar\n", unanimousYes)
+	fmt.Println(totalYes)
+	fmt.Println(unanimousYes)
 }

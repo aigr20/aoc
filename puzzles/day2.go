@@ -80,6 +80,6 @@ func Day2() {
 		}
 	}
 
-	fmt.Printf("%v giltiga lösenord enligt första regeluppsättningen\n", valids1)
-	fmt.Printf("%v giltiga lösenord enligt andra regeluppsättningen\n", valids2)
+	fmt.Println(valids1)
+	fmt.Println(valids2)
 }

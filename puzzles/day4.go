@@ -137,6 +137,6 @@ func Day4() {
 	validPassports := countValidPassports(passports)
 	validatedPassports := countValidatedPassports(passports)
 
-	fmt.Printf("Det finns %v giltiga pass\n", validPassports)
-	fmt.Printf("Det finns %v pass som uppfyller valideringskraven\n", validatedPassports)
+	fmt.Println(validPassports)
+	fmt.Println(validatedPassports)
 }

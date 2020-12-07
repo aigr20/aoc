@@ -98,6 +98,6 @@ func Day5() {
 		}
 	}
 
-	fmt.Printf("Det högsta boarding pass-id:t är %v\n", highestID)
-	fmt.Printf("Mitt boarding pass har id %v\n", myID)
+	fmt.Println(highestID)
+	fmt.Println(myID)
 }

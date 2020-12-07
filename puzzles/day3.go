@@ -41,6 +41,6 @@ func Day3() {
 	trees *= treesOnPath(rows, 7, 1)
 	trees *= treesOnPath(rows, 1, 2)
 
-	fmt.Printf("Träffade på %v träd i första delen\n", p1Trees)
-	fmt.Printf("Träden på alla vägar multiplicerade blir %v\n", trees)
+	fmt.Println(p1Trees)
+	fmt.Println(trees)
 }
