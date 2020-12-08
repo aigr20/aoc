@@ -4,7 +4,6 @@ import (
 	"aoc/util"
 	"fmt"
 	"log"
-	"putil"
 	"strconv"
 	"strings"
 )
@@ -83,7 +82,6 @@ outer:
 		found++
 	}
 	fmt.Println(found)
-	putil.PrettyPrint(bagTypes)
 	goldTotal(bagTypes, "shiny gold")
 	fmt.Println(day7part2)
 }
