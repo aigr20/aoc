@@ -23,4 +23,7 @@ func main() {
 	fmt.Println("Dag 8:")
 	puzzles.Day8A()
 	puzzles.Day8B()
+	fmt.Println("Dag 9:")
+	puzzles.Day9A()
+	puzzles.Day9B()
 }
